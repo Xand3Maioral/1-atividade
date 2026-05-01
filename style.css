@@ -1,59 +1,54 @@
-/* Reset básico para remover margens padrão e facilitar o layout */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Configuração geral do corpo da página */
 body {
     font-family: 'Inter', sans-serif;
-    background-color: #121212; /* Preto / Cinza bem escuro */
-    color: #ffffff; /* Texto branco */
+    background-color: #121212;
+    color: #ffffff;
     line-height: 1.6;
 }
 
-/* --- 1. Header --- */
 .header {
-    background-color: #0a0a0a; /* Preto mais forte */
+    background-color: #0a0a0a;
     padding: 20px 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 2px solid #39ff14; /* Detalhe em verde neon */
+    border-bottom: 2px solid #39ff14;
 }
 
 .logo {
     font-size: 28px;
     font-weight: 800;
-    color: #39ff14; /* Verde neon */
+    color: #39ff14;
     text-transform: uppercase;
 }
 
 .menu ul {
-    list-style: none; /* Remove bolinhas da lista */
+    list-style: none;
     display: flex;
-    gap: 30px; /* Espaço entre os links */
+    gap: 30px;
 }
 
 .menu a {
-    text-decoration: none; /* Remove sublinhado */
+    text-decoration: none;
     color: #ffffff;
     font-weight: 600;
     transition: color 0.3s ease;
 }
 
 .menu a:hover {
-    color: #39ff14; /* Fica verde ao passar o mouse */
+    color: #39ff14;
 }
 
-/* --- 2. Banner Principal --- */
 .banner {
-    /* Fundo escurecido por cima da imagem para o texto ficar legível */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('images/hero.png');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('hero.png');
     background-size: cover;
     background-position: center;
-    height: 60vh; /* Ocupa 60% da altura da tela */
+    height: 60vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -67,10 +62,9 @@ body {
     color: #ffffff;
 }
 
-/* Botão padrão de compra */
 .btn-comprar {
-    background-color: #39ff14; /* Verde neon */
-    color: #0a0a0a; /* Texto preto para contraste */
+    background-color: #39ff14;
+    color: #0a0a0a;
     padding: 15px 35px;
     text-decoration: none;
     font-weight: 800;
@@ -84,10 +78,9 @@ body {
 
 .btn-comprar:hover {
     background-color: #32e011;
-    transform: scale(1.05); /* Aumenta levemente ao passar o mouse */
+    transform: scale(1.05);
 }
 
-/* --- 3. Seção de Produtos --- */
 .secao-produtos {
     padding: 60px 20px;
     text-align: center;
@@ -102,14 +95,13 @@ body {
 
 .produtos-grid {
     display: flex;
-    flex-wrap: wrap; /* Permite que os cards quebrem de linha se não couberem */
+    flex-wrap: wrap;
     gap: 25px;
-    justify-content: center; /* Centraliza os cards */
+    justify-content: center;
 }
 
-/* Estilo de cada card de produto */
 .card {
-    background-color: #1e1e1e; /* Cinza escuro */
+    background-color: #1e1e1e;
     width: 260px;
     padding: 20px;
     border-radius: 10px;
@@ -120,7 +112,7 @@ body {
 .card img {
     width: 100%;
     height: 200px;
-    object-fit: cover; /* Faz a imagem preencher o espaço sem distorcer */
+    object-fit: cover;
     border-radius: 8px;
     margin-bottom: 15px;
 }
@@ -139,14 +131,13 @@ body {
 }
 
 .card .btn-comprar {
-    width: 100%; /* Botão ocupa toda a largura do card */
+    width: 100%;
     padding: 12px;
     font-size: 16px;
 }
 
-/* --- 4. Seção Sobre --- */
 .secao-sobre {
-    background-color: #1e1e1e; /* Cinza escuro para diferenciar */
+    background-color: #1e1e1e;
     padding: 60px 20px;
     text-align: center;
     border-top: 1px solid #333333;
@@ -162,10 +153,9 @@ body {
     max-width: 700px;
     margin: 0 auto;
     font-size: 18px;
-    color: #cccccc; /* Cinza claro para o texto */
+    color: #cccccc;
 }
 
-/* --- 5. Rodapé --- */
 .rodape {
     background-color: #0a0a0a;
     text-align: center;
